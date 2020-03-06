@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap');
+
+html{
+    font-size: 100%; /*16px*/
+}
+
+body{
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+
+
+.wrapper{
+padding-right: 24px;
+padding-left: 24px
+
+
+}
+    .header{
+
+        position: relative;
+        margin: 24px 0  ;
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: ".logo .nav_menu ul";
+
+        
+        
+    }
+
+    .logo{
+        display: inline;
+    }
+    .logo img{
+        max-width: 21.33vw;
+        height: auto;
+    }
+
+    .nav_menu ul{
+        padding-inline-start: 0px;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-self: stretch;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+    }
+
+     .nav_menu a{
+        font-family: 'Raleway' ;
+        font-weight: 500;
+        font-size: .75rem;
+        color: hsl(243, 87%, 12%);
+        text-decoration: none;
+        margin-left: 20px;
+        
+    }
+
+    .hero{
+        margin: 94px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 93%;
+    }
+
+    .hero_text{
+        margin-top:21px;
+        color: hsl(243, 87%, 12%);
+        text-align: center;
+    }
+
+    .hero_desc{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 150%;
+
+    }
+
+    .get_started{
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: .89rem;
+        line-height: 150%;
+        margin: 25px 18px;
+
+    }
+    .email_form_1{
+        text-align: center;
+    }
+
+    #email_1{
+        box-sizing: border-box;
+        font-size:.75rem;
+        color: hsl(243, 87%, 12%);
+        background-color: white;;
+        width: 90%;
+        height: 15px;
+        margin: 7px 0px;
+        box-sizing: content-box;
+        border: 1px solid hsl(243, 87%, 12%);
+        border-radius: 3px 3px;
+        padding: 10px;
+    }
+
+    #email_1::placeholder{
+        color: rgb(231, 231, 231);
+    }
+
+    #email_1_button{
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: .75rem;
+        color: white;
+        width: 90%;
+        height: 15px;
+        margin-top: 9px;
+        padding: 10px;
+        background-color:hsl(224, 93%, 58%);
+        border-radius: 3px;
+        border: none;
+        box-shadow: 0 1px 7px 1px rgba(0,0,0,0.2) ;
+        box-sizing: content-box;
+        cursor: pointer;
+        display: inline-block;
+    }
+  
+    #email_1_button:hover {
+        color: hsl(0, 0%, 100%);
+        -webkit-transform:   translateY(-4px) ;
+        transform:   translateY(-4px) ;
+        transition: all 200ms ease;
+    }
+
+    .info_curve img{
+        display:block;
+        width: 100vw;
+
+    }
+
+    .info_wrapper{
+        background-color: #F8F8FE;
+    }
+
+    .info{
+        padding: 40px 24px 40px 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        display: block;
+        
+    }
+    
+    .info img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+
+    .info_desc{
+        padding: 90px 0px 40px 0px;
+    }
+
+    .info_desc_title h1{
+        color: hsl(243, 87%, 12%);
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: .97rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .info_desc_content{
+        padding: 15px 0px;
+        
+    }
+
+    .info_desc_content p{
+        color: hsl(238, 22%, 44%);
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: .89rem;
+    }
+
+    .info_desc_button{
+        text-align:  center;
+    }
+
+    .id_button{
+        background-color: transparent;
+        border-bottom: 1px  solid hsl(170, 45%, 43%);
+        color: hsl(170, 45%, 43%);
+        padding: 5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .80rem;
+        font-family: 'Open Sans';
+        cursor: pointer;
+    }
+
+    .id_button .icon_arrow{
+        width: 16px;
+        display: inline;
+    }
+
+    .white_block{
+        color: hsl(243, 87%, 12%);
+        font-family: 'Open Sans';
+        font-size: .66rem;
+        font-weight: 500;
+        background-color: white;
+        max-width: 280px;
+        box-sizing: border-box;
+        margin: 30px auto;
+        padding: 21px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1) ;
+    }
+
+
+    .white_block_image img{
+        width: 12px;
+        margin: 0;
+    }
+
+    .rounded img{
+        border-radius: 50%;
+        width: 25px;
+        margin: 0;
+        float: left;
+        padding-right: 5px;
+    }
+
+    .rounded p{
+        margin: 0px;
+    }
+
+    .kyle_desc{
+        color: hsl(243, 87%, 12%);
+        font-size: .65rem;
+        font-weight: 700;
+    }
+
+    .founder_desc{
+        color: hsl(243, 87%, 12%);
+        font-size: .50rem;
+        font-weight: 400;
+        width: 75%;
+    }
+
+    .early_acces{
+        padding: 50px 0px 70px 0px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .early_acces h1{
+        margin: 0;
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        font-family: 'Raleway';
+    }
+
+    .early_desc {
+        color: white;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: .85rem;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding:0 0 15px 0;
+    }
+
+    .early_acces_wrapper{
+        background-color: hsl(238, 22%, 44%);
+    }
+
+    .email_form_2{
+        text-align: center;
+    }
+
+    #email_2{
+        font-size:.75rem;
+        color: hsl(243, 87%, 12%);
+        background-color: white;;
+        width: 65%;
+        height: 15px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 2px 2px;
+        padding: 10px;
+        box-sizing: content-box;
+    }
+
+    #email_2::placeholder{
+        color: rgb(231, 231, 231);
+    }
+
+    #email_2_button{
+        box-sizing: border-box;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: .75rem;
+        color: white;
+        width: 65%;
+        height: 15px;
+        background-color:hsl(224, 93%, 58%);
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        box-shadow: 0 1px 7px 1px rgba(0,0,0,0.05) ;
+        box-sizing: content-box;
+        cursor: pointer;
+        display: inline-block;
+    }
+  
+    #email_2_button:hover {
+        color: hsl(0, 0%, 100%);
+        transform:   translateY(-4px) ;
+        transform:   translateY(-4px) ;
+        transition: all 200ms ease;
+    }
+
+    footer{
+        background-color: hsl(243, 87%, 12%);
+    }
+
+    .footer_content{
+        color: white;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: .85em;
+        display: block;
+        padding: 50px 0px 45px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer_content a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer_content a:hover{
+        color: hsl(0, 0%, 75%);
+        text-decoration: none;
+    }
+
+    .footer_content ul{
+        padding: 10px 0;
+    }
+
+    .footer_content li{
+        list-style-type: none;
+        padding-top: 20px;
+    }
+
+    .footer_content li img{
+        padding-right:20px;
+    }
+
+    .logo_blck_wht{
+        filter: brightness(0) invert(1);
+        display: block;
+        width: 180px;
+    }
+
+    .socials{
+        padding: 40px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .socials img{
+        filter: invert(1);
+        width: 28px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+
+    @media (min-width: 425px) {
+
+        .nav_menu a{
+            font-size: .85rem;
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        
+
+        .header{
+            margin: 58px 0;        
+        }
+
+        .nav_menu a{
+            font-size: 1em;
+        }
+
+        .hero{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "hero_text hero_image";
+        }
+
+        .hero_text{
+            order: -1;
+            text-align: left;
+            
+        }
+
+        .get_started{
+            margin: 25px 0;
+        }
+
+
+        .email_form_1{
+            text-align: left;
+        }
+
+        .info{
+            display: grid;
+            grid-template-columns: 1fr .75fr;
+            grid-template-areas: "illustration-2 info_desc";
+            padding: 10px 25px 50px 25px;
+        }
+
+        .info_desc{
+            order: -1;
+        }
+
+        .hero img{
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .info_desc_title h1{
+            font-size: 1.6rem;
+        }
+
+        .id_button{
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        .info_desc_button{
+            text-align: left;
+        }
+
+        .white_block{
+            margin: 30px 0px;
+            font-size: .80rem;
+        }
+
+        .kyle_desc{
+            font-size: .75rem;
+        }
+
+        .founder_desc{
+            font-size: .70rem;
+        }
+
+        .early_acces{
+            padding: 100px 25px 100px 25px;
+            grid-template-columns: 1fr .7fr;
+            text-align: left;
+        }
+
+        .early_desc{
+            margin: 25px 0 0 0;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .early_acces h1{
+            font-size: 2rem;
+        }
+
+        .email_form_2{
+            text-align: left;
+        }
+
+        #email_2{
+            width: 85%;
+            padding: 15px;
+        }
+
+        #email_2_button{
+            width: 35%;
+            padding: 15px;
+        }
+
+        .footer_content{
+            display: grid;
+            grid-template-columns: 1fr .5fr .5fr .5fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "gr_footer_logo gr_footer_logo gr_footer_logo gr_footer_logo" "gr_footer1 gr_footer2 gr_footer3 socials";
+          }
+          .socials{
+              text-align: left;
+          }
+          
+    }
+
+    @media (min-width: 1024px){
+
+        .header{
+
+            position: relative;
+            margin: 64px 0 80px 0;
+            grid-template-columns: 1fr .4fr;
+        }
+
+        .wrapper{
+            padding-right: 85px;
+            padding-left: 85px;
+        }
+
+        .hero_desc{
+            font-size: 2.4rem;
+
+        }
+
+        .get_started{
+            font-size: 1.1rem;
+            font-family: 'Open Sans';
+            max-width: 41vw;
+        }
+
+        .email_form_1{
+            text-align: left;
+        }
+
+        #email_1{
+            width: 45%;
+            padding: 15px;
+            vertical-align: middle;
+        }
+
+        #email_1_button{
+            width: 27%;
+            margin: 9px 12px;
+            padding: 15px;
+
+            vertical-align: middle;
+        }
+        
+        .info{
+            padding: 10px 85px 100px 85px;
+
+        }
+
+        .info_desc{
+            padding: 0px;
+        }
+
+        .info_desc_title h1{
+            font-size: 2.4rem;
+            text-align: left;
+        }
+
+        .info_desc_content p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .info_desc_content {
+            max-width: 37vw
+        }
+
+        .white_block{
+            max-width: 320px;
+        }
+
+        .early_acces{
+            padding: 100px 85px 100px 85px;
+        }
+        
+        .early_desc{
+            max-width: 500px;
+        }
+    }
+
+    @media (min-width: 1440px){
+
+
+        .header{
+
+            position: relative;
+            margin: 64px 0 80px 0;
+            grid-template-columns: 1fr .3fr;
+        }
+
+    .hero_text {
+        vertical-align: middle;
+    }
+
+    .white_block{
+        max-width: 340px;
+    }
+}
